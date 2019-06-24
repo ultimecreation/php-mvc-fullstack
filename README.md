@@ -1,6 +1,6 @@
 # Php-mvc-fullstack AcmeFleurs
 
-#But du projet
+# But du projet
 
 création d’un site pour un fleuriste fictif et d'une structure MVC en php en partant de zéro 
 
