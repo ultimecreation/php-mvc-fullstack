@@ -3,17 +3,14 @@ class HomeController extends Controller
 {
     public function index()
     {
-
-        $data['example'] = $this->getModel('UserModel')->getUsers();
-        $data['site'] = 'test site';
-        return $this->renderView('index', $data);
+        return $this->renderView('home/home');
     }
-    public function about()
+    public function prestations()
     {
-        $uriParts = explode('/', $_GET['url']);
+        // get all services from db
+        $data['services'] = $this->getModel('ServiceModel')->getAll();
 
-        $id = $uriParts[1];
-        $name = $uriParts[2];
-        echo "home controller run about function id={$id}, name={$name}";
+        // render view and data
+        return $this->renderView('home/prestations', $data);
     }
 }

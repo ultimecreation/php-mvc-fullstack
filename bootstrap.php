@@ -1,4 +1,5 @@
 <?php
+
 // Load utils
 $utilFiles = array_diff(scandir('../utils'), array(".", ".."));
 foreach ($utilFiles as $utilFile) {

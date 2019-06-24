@@ -11,7 +11,7 @@ class Model
     public function __construct()
     {
         try {
-            $this->bdd = new PDO("mysql:host={$this->host};dbname={$this->dbname};charset=utf8", $this->user, $this->pass);
+            $this->bdd = new PDO("mysql:host={$this->host};dbname={$this->dbname};charset=UTF8", $this->user, $this->pass);
             $this->bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
         } catch (PDOException $e) {

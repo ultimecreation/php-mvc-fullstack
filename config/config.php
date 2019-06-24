@@ -1,11 +1,11 @@
 <?php
 // database CONSTANTS
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'mvc-framework');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_HOST', 'YOUR LOCALHOST');
+define('DB_NAME', 'YOUR DB NAME');
+define('DB_USER', 'YOUR DB USER');
+define('DB_PASS', 'YOUR DB PASS');
 
 // site CONSTANTS
 define('SITENAME', '');
-define('SITEURL', 'http://localhost/mvcframework2');
-define('ASSETSURL', 'http://localhost/mvcframework2/public/');
+define('SITEURL', 'YOUR SITE URL');
+define('ASSETSURL', 'YOUR ASSETS URL');

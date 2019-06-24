@@ -20,11 +20,14 @@ class Router
 
         foreach ($this->routes as $route) {
             if ($route['params'] !== null) {
+
                 $this->params = $route['params'];
                 foreach ($route['params'] as $key => $value) {
-                    $newParttern = str_replace(":{$key}",  $value,  $route['pattern']);
+                    $newParttern = str_replace(":{$key}", $value,  $route['pattern']);
                     $route['pattern'] = $newParttern;
                 }
+                debug(array($url, $this->params));
+                die();
                 if ($url === $route['pattern']) {
                     $this->controller = "{$route['path'][0]}";
                     $this->method = $route['path'][1];
