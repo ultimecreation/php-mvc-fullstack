@@ -1,16 +1,20 @@
 <?php
+
+// $data = array(
+//     'template' => 'custom'
+// );
+
+
 class HomeController extends Controller
-{
+{    
+    /**
+     * index
+     *
+     * @return void
+     */
     public function index()
     {
-        return $this->renderView('home/home');
-    }
-    public function prestations()
-    {
-        // get all services from db
-        $data['services'] = $this->getModel('ServiceModel')->getAll();
-
-        // render view and data
-        return $this->renderView('home/prestations', $data);
+       
+        return $this->renderView('pages/index');
     }
 }
