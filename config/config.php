@@ -1,11 +1,11 @@
 <?php
 // database CONSTANTS
-define('DB_HOST', 'YOUR LOCALHOST');
-define('DB_NAME', 'YOUR DB NAME');
-define('DB_USER', 'YOUR DB USER');
-define('DB_PASS', 'YOUR DB PASS');
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'my_website');
+define('DB_USER', 'root');
+define('DB_PASS', '');
 
 // site CONSTANTS
 define('SITENAME', '');
-define('SITEURL', 'YOUR SITE URL');
-define('ASSETSURL', 'YOUR ASSETS URL');
+define('BASE_URL', 'http://localhost/my-framework');
+define('PUBLIC_URL', BASE_URL.'/public');
