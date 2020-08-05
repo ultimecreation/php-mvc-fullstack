@@ -7,5 +7,5 @@ define('DB_PASS', '');
 
 // site CONSTANTS
 define('SITENAME', '');
-define('BASE_URL', 'http://localhost/my-framework');
+define('BASE_URL', 'http://localhost/php-mvc-framework');
 define('PUBLIC_URL', BASE_URL.'/public');
