@@ -1,18 +1,17 @@
 <?php
-// create link to public assets
-function assetsUrl($assetsPartial)
+function siteUrl($partial = null)
 {
-    return $assetsPath = ASSETSURL . $assetsPartial;
+    return BASE_URL.$partial;
 }
-// create link for <a href>
-function linkUrl($sitePartial)
+function publicUrl($partial = null)
 {
-    return $sitePath = SITEURL . $sitePartial;
+    return PUBLIC_URL.$partial;
 }
-function redirectTo($endPath)
+function redirectTo($endPath=null,$data=null)
 {
-    $path = SITEURL . $endPath;
-    header("Location: {$path}");
+    $path = siteUrl($endPath,$data);
+
+    header("Location: $path");
 }
 function getUriParts($num = null)
 {
@@ -20,10 +19,8 @@ function getUriParts($num = null)
     if ($num === null) return $uriParts;
     return $uriParts[$num];
 }
-function isHomeUrl()
+function currentUrl()
 {
-    if ($_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] === SITEURL . '/') {
-        return true;
-    }
-    return false;
+
+    return $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 }
