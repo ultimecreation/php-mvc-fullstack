@@ -1,5 +1,5 @@
 # php-mvc-fullstack
-
+stable
 
 1. Config du projet config > config.php
 
