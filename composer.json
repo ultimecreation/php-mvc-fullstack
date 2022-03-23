@@ -3,6 +3,5 @@
     "description": "A basic mvc implementation for beginners",
     "type": "project",
     "license": "MIT",
-    "minimum-stability": "stable",
     "require": {}
 }
