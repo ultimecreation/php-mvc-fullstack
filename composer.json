@@ -1,0 +1,8 @@
+{
+    "name": "ultimecreation/php-mvc",
+    "description": "A basic mvc implementation for beginners",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {}
+}
