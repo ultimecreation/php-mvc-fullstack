@@ -103,6 +103,7 @@ stable
 
 7. css, js, images 
 
+
 => public > assets > css > style.css
 
 => public > assets > js > main.js
